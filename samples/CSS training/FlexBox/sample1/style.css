@@ -1,0 +1,54 @@
+html
+{
+    direction: rtl;
+    /* direction: ltr; */
+}
+
+.flex-container
+{
+    display: flex;
+
+    /*اگر بخواهیم که تمام خط رو نگیره*/
+    /* display: inline-flex;*/
+    /*flex-direction: row;*/
+
+    /*flex-direction: column;*/
+    flex-direction: row;
+    /*flex-direction: row;*/
+    flex-wrap: wrap;
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap-reverse; */
+}
+
+.flex-item
+{
+    width: 200px;
+    margin: 10px 0;
+}
+
+/* خطوط پایین نقش زیبا سازی دارند مهم نیستن */
+
+body
+{
+    background-color: #1b1b1b;
+}
+
+.flex-container
+{
+    background-color: #fff;
+}
+
+.flex-item
+{
+    background-color: tomato;
+    text-align: center;
+    line-height: 2;
+    color: #fff;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.flex-item:nth-child(even)
+{
+    background-color: #e43;
+}

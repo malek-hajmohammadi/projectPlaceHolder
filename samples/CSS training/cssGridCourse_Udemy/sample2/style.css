@@ -1,0 +1,31 @@
+.container{
+    /*display: grid;*/
+    /*ابعاد گرید تمام صفحه نمی شود*/
+    display: inline-grid;
+
+    /*اگر تعداد div ها کمتر از ستون های تعریف شده جدول باشه ، اتفاق خاصی نمی افتد*/
+    /*اینطوری ما 4 تا ستون تعریف می کنیم و ابعادش رو auto می گذاریم*/
+    /*grid-template-columns: auto auto auto auto;*/
+
+    /*ابعاد آن به یک اندازه مشخص می شود*/
+    /*grid-template-columns: 100px 100px 100px 100px ;*/
+
+    /*این میاد خونه هایی که در یک ستون هستند رو به اندازی بزرگترین خونه می کند*/
+    grid-template-columns: max-content max-content max-content max-content ;
+
+
+    /*این درصدی میشه ولی پدینگ رو حساب نمی کنه یعنی اگر جمع آنها 100 بشه و پدینگ داشته باشیم ، از ناحیه گرید می زنه بیرون*/
+    /*grid-template-columns: 20% 20% 20% 20% ;*/
+
+    grid-gap: 10px;
+    background-color: #5db616;
+    padding: 8px;
+}
+
+.container > div {
+    background-color: #f2f2f2;
+    border: 1px solid #000;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}

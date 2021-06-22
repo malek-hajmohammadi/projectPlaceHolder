@@ -1,0 +1,58 @@
+html
+{
+    direction: rtl;
+}
+
+.flex-container
+{
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.flex-item
+{
+    margin: 10px 0;
+}
+
+.first
+{
+    flex: 1 1 400px;
+}
+.second
+{
+    flex: 2 3 600px;
+}
+
+.third
+{
+    flex: 1 2 400px;
+}
+
+/* خطوط پایین نقش زیبا سازی دارند مهم نیستن */
+
+body
+{
+    background-color: #1b1b1b;
+}
+
+.flex-container
+{
+    background-color: #fff;
+}
+
+.flex-item
+{
+    background-color: tomato;
+    text-align: center;
+    line-height: 2;
+    color: #fff;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.flex-item:nth-child(odd)
+{
+    background-color: #e43;
+}
